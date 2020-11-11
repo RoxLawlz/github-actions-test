@@ -12,6 +12,10 @@ jobs:
           ls
       - name: Checkout
         uses: actions/checkout@v1
+      - name: after checkout
+        run: | 
+          pwd
+          ls
       - name:  simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
@@ -19,4 +23,3 @@ jobs:
           who-to-greet: Dennis
       - name: running time action action action
         run: echo "${{ steps.greet.outputs.time }}"
-
