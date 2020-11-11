@@ -26,3 +26,9 @@ jobs:
       - name: Directory Bash
         run: pwd
         shell: bash
+      - name: creating files
+        run: touch red
+        shell: bash
+      - name: listing files
+        run: ls -la
+        shell: bash
