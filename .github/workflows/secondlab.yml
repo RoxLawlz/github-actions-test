@@ -1,0 +1,11 @@
+name: nameofaction
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      name: running list
+      run: listing
+ 
