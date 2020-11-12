@@ -6,6 +6,6 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      name: running list
-      run: listing
+      - name: running list
+        run: listing
  
