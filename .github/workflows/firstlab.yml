@@ -1,0 +1,10 @@
+name: Running on labs
+
+on: [push]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu:latest
+    steps:
+      - name: running ls
+        run: ls     
