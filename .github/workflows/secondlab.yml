@@ -1,8 +1,20 @@
 name: cronjob
 
 on:
-  repository_dispatch:
-    types: [build] 
+  push:
+#    branches:
+#      - master
+#      - "feature/*" # matches feature/feata, feature/featb
+#      - "!feature/featC"
+#    tags:
+#      - v1.*
+#    paths:
+#      - "**.js"
+#      - "!**.txt"
+#    tags-ignore     
+#    braches-ignore:
+#  repository_dispatch:
+#    types: [build] 
 #  schedule:
 #    - cron: "0/5 * * * *"
 #    - cron: "0/6 * * * *"
