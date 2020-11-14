@@ -10,11 +10,13 @@ on:
   pull_request: 
     types: [closed, assigned, opened, reopened]
     
-
+  
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: payload
+        run: echo ${{ github.event.client-payload.env }}
       - name: running list
         run: ls -la
  
