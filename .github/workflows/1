@@ -1,0 +1,27 @@
+name: ENV Variables
+on: push
+env:
+  WF_ENV: Avilable to all jobs
+
+jobs:
+  log-env:
+    runs-on: ubuntu-latest
+    env:
+       JOB_ENV: local env
+    steps:
+      - name: Log ENV Variables
+        run: | 
+          echo "WF_ENV: ${WF_ENV}"
+          env:
+            STEP_ENV: ava to only step
+          run: |
+            echo "WF_ENV: ${WF_ENV}"
+            echo "JOB_ENV: ${JOB_ENV}"
+            echo "WF_ENV: ${WF_ENV}"
+        - name: | 
+            echo "WF_ENV: ${WF_ENV}"
+            echo "JOB_ENV: ${JOB_ENV}"
+            echo "WF_ENV: ${WF_ENV}"
+  log-default-env:
+    runs-on: ubuntu-latest
+    steps:
