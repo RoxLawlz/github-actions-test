@@ -2,10 +2,10 @@ name: cronjob
 
 on:
   push:
-#    branches:
-#      - master
-#      - "feature/*" # matches feature/feata, feature/featb
-#      - "!feature/featC"
+    branches:
+      - master
+      - "feature/*" # matches feature/feata, feature/featb
+      - "!feature/featC"
 #    tags:
 #      - v1.*
 #    paths:
@@ -19,8 +19,8 @@ on:
 #    - cron: "0/5 * * * *"
 #    - cron: "0/6 * * * *"
 
-  pull_request: 
-    types: [closed, assigned, opened, reopened]
+#  pull_request: 
+#    types: [closed, assigned, opened, reopened]
     
   
 jobs:
