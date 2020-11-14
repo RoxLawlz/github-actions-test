@@ -1,11 +1,12 @@
-name: nameofaction
+name: cronjob
 
 on: 
   schedule:
     - cron: "0/5 * * * *"
     - cron: "0/6 * * * *"
 
-  pull_request: [closed, assigned, opened, reopened]
+  pull_request: 
+    types: [closed, assigned, opened, reopened]
     
 
 jobs:
