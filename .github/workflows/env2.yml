@@ -11,22 +11,17 @@ jobs:
       run: |
         pwd
         ls -a
-        git init
-        git remote add origin "https://$GITHUB_ACTOR:${{ secrets }}@github.com/$GITHUB_REPOSITORY.git"
-        git remote -v
+        git clone "https://$GITHUB_ACTOR:${{ secrets }}@github.com/$GITHUB_REPOSITORY.git"
         git config --global user.email "hartingerdennis@gmail.com"
-        git config --global user.name "my-bot" 
-        git fetch
-        git checkout master
-        git branch --set-upstream-to=origin/master
-        git pull
+        git config --global user.name "my-bot"
         ls -a
         echo $RANDOM >> random.txt
         ls -a
         cd git-actions-test
+        pwd
         git add -A
         git commit -m "Random file"
-        git push
+        git push origin master
     - name: Create issue using REST API
       run: |
         curl --request POST \
