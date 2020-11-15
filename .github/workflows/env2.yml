@@ -17,7 +17,7 @@ jobs:
         ls -a
         echo $RANDOM >> random.txt
         ls -a
-        cd git-actions-test
+        cd github-actions-test
         pwd
         git add -A
         git commit -m "Random file"
