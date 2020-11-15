@@ -14,10 +14,10 @@ jobs:
         git clone "https://$GITHUB_ACTOR:${{ secrets }}@github.com/$GITHUB_REPOSITORY.git"
         git config --global user.email "hartingerdennis@gmail.com"
         git config --global user.name "my-bot"
-        ls -a
+        cd github-actions-test
+        ls -a  
         echo $RANDOM >> random.txt
         ls -a
-        cd github-actions-test
         pwd
         git add -A
         git commit -m "Random file"
