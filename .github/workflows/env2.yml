@@ -13,7 +13,7 @@ jobs:
         ls -a
         git config --global user.email "my-bot@bot.com
         git config --global user.name "my-bot"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}/RoxLawlz/@github.com/$GITHUB_REPOSITORY
         git checkout master
         ls -la
         touch $RANDOM >> random.txt
