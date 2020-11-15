@@ -22,7 +22,7 @@ jobs:
         ls -la
         git add -A
         git commit -m'nothing'
-        git push 
+        git push origin master
         
    
     - name: Create issue using REST API
