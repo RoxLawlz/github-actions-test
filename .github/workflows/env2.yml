@@ -21,7 +21,7 @@ jobs:
         pwd
         git add .
         git commit -m "Random file"
-        git push
+        git push origin master
     - name: Create issue using REST API
       run: |
         curl --request POST \
