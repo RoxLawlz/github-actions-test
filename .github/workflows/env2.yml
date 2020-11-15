@@ -20,7 +20,7 @@ jobs:
         ls -la
         touch $RANDOM >> random.txt
         ls -la
-        git add .
+        git add -A
         git commit -m 'nothing'
         git push 
         
