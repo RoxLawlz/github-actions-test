@@ -13,6 +13,7 @@ jobs:
         ls -a
         git init
         git remote add origin "https://$GITHUB_ACTOR:${{ secrets }}@github.com/$GITHUB_REPOSITORY.git"
+        git remote -v
         git config --global user.email "hartingerdennis@gmail.com"
         git config --global user.name "my-bot" 
         git fetch
