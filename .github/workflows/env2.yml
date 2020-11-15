@@ -17,6 +17,7 @@ jobs:
         git config --global user.name "my-bot"
         ls -a  
         echo $RANDOM >> random.txt
+        grep 1 random.txt >> random2.txt
         ls -a
         pwd
         git add .
