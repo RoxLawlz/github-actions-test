@@ -23,6 +23,7 @@ jobs:
         ls -a
         echo $RANDOM >> random.txt
         ls -a
+        cd git-actions-test
         git add -A
         git commit -m "Random file"
         git push
